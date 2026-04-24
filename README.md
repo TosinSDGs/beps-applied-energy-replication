@@ -75,7 +75,7 @@ Place all raw datasets into the `/data_raw` folder.
 Run the master Python script located in the `/code` folder:
 
 ```text
-master_replication.py
+BEPS Paper Master Replication File.ipynb
 ```
 
 The script performs the following tasks sequentially:
