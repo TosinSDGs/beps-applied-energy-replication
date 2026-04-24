@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Replication Data Notice
+
+The raw data used in this study originate from publicly available sources, including Open Data DC and Degree Days (degreedays.net). These datasets are provided in this repository solely for reproducibility purposes and remain subject to the terms and conditions of the original providers.
+
+All original code, data processing scripts, and replication materials created for this study are released under the MIT License.
