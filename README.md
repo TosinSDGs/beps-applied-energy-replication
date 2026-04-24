@@ -4,7 +4,7 @@ This repository contains the replication materials for the paper:
 
 **“Building Energy Performance Standards: Impacts on Building Energy Efficiency and GHG Emissions in Washington, DC”**
 
-The repository provides the raw data, Python scripts, and documentation required to reproduce the analytical dataset, empirical results, tables, and figures presented in the manuscript.
+The repository provides the raw data, Python code, and documentation required to reproduce the analytical dataset, empirical results, tables, and figures presented in the manuscript.
 
 ---
 
@@ -15,13 +15,11 @@ The repository provides the raw data, Python scripts, and documentation required
     Raw benchmarking and climate datasets
 
 /data_clean
-    Intermediate and final cleaned datasets generated from the scripts
+    Intermediate and final cleaned datasets generated from the replication code
 
-/code_cleaning
-    Python scripts for data cleaning, merging, recoding, and variable construction
-
-/code_analysis
-    Python scripts for descriptive analysis, econometric estimation, robustness checks, tables, and figures
+/code
+    Master Python replication script for data cleaning, variable construction,
+    econometric estimation, robustness checks, tables, and figures
 
 /output_tables
     Replicated tables from the manuscript
@@ -56,11 +54,9 @@ Recommended environment:
 - pandas
 - numpy
 - statsmodels
-- linearmodels
 - matplotlib
-- seaborn
 - scipy
-- geopandas (if spatial analysis is included)
+- linearmodels
 
 Install required packages using:
 
@@ -75,42 +71,27 @@ pip install -r requirements.txt
 ### Step 1: Download Raw Data
 Place all raw datasets into the `/data_raw` folder.
 
-### Step 2: Run Data Cleaning Scripts
-Run the scripts in `/code_cleaning` in the following order:
+### Step 2: Run the Master Replication Script
+Run the master Python script located in the `/code` folder:
 
 ```text
-01_data_cleaning.py
-02_variable_construction.py
-03_gap_construction.py
+master_replication.py
 ```
 
-These scripts:
-- clean and validate benchmarking records,
-- harmonize property categories,
-- construct treatment intensity measures,
-- merge climate variables,
-- and generate the final analytical dataset.
+The script performs the following tasks sequentially:
 
-### Step 3: Run Main Analysis
-Run the scripts in `/code_analysis`:
-
-```text
-04_descriptive_analysis.py
-05_main_regressions.py
-06_event_study.py
-07_robustness_checks.py
-```
-
-These scripts reproduce:
+- data cleaning and validation,
+- harmonization of property categories,
+- construction of treatment intensity measures,
+- merging of climate variables,
 - descriptive statistics,
-- baseline regressions,
-- event-study estimates,
+- econometric estimation,
+- event-study analysis,
 - robustness checks,
-- tables,
-- and figures presented in the paper.
+- and generation of all tables and figures presented in the manuscript.
 
-### Step 4: Output Files
-Replicated tables and figures will be saved automatically in:
+### Step 3: Output Files
+Replicated tables and figures will be automatically saved in:
 
 ```text
 /output_tables
