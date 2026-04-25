@@ -112,4 +112,4 @@ Replicated tables and figures will be automatically saved in:
 
 If using these materials, please cite:
 
-Gbadegesin, T. (2026). *Replication package for “Building Energy Performance Standards: Impacts on Building Energy Efficiency and GHG Emissions in Washington, DC”*. Zenodo. [DOI LINK]
+Gbadegesin, T. (2026). Replication package for “Building Energy Performance Standards: Impacts on Building Energy Efficiency and GHG Emissions in Washington, DC”. Zenodo. https://doi.org/10.5281/zenodo.19751257
